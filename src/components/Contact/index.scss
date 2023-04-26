@@ -1,0 +1,165 @@
+.contact-page {
+    .text-zone {
+        .header {
+            color:  #fd7e14;
+            font-size: 50px;
+            font-weight: bolder;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 5px;
+            margin-top: 18rem;
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 16px;
+            color: #ffffffb2;
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin-top: 0;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+      display: block;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 48%;
+        float: left;
+        clear: none;
+        margin-left: 1rem;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 1px solid #fd7e14;
+      background: #fff;
+      height: 50px;
+      font-size: 16px;
+      color:#343a40;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 1px solid #fd7e14;
+      background: #fff;
+      height: 50px;
+      font-size: 16px;
+      color:#343a40 ;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+  
+    .flat-button {
+      color: #fd7e14;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #fd7e14;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+  
+  .map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    float: right;
+    width: 100%;
+    height: 115%;
+    margin-top: -3%;
+
+    iframe {
+        width: 80%;
+       margin-left: 10%;
+        height: 100vh;
+    }
+  }
+  
+  .leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .info-map {
+    position: absolute;
+    background: #000;
+    // top: 50px;
+    right: 30%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+  
+    
+  
+      span {
+        color: #fd7e14;
+        font-size: 16px;
+      }
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .map-wrap {
+      float: none;
+      margin: 0;
+      width: 100%;
+      height: 400px;
+    }
+    
+    .info-map {
+      display: none;
+    }
+    #contact {
+      width: 90%;
+      margin: 0 auto;
+          }
+  }
+  @media screen and (min-width: 767px)  {
+    #contact {
+width: 80%;
+margin: 0 auto;
+    }
+  }

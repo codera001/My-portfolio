@@ -1,0 +1,206 @@
+.sidebar-toggle {
+  display: block;
+}
+
+
+    .nav-bar {
+        background:#0c0c14;
+        color: white;
+        width: 80px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        
+       
+     
+        .logo {
+          display: block;
+          text-decoration: none;
+          font-family: sans-serif;
+          text-align: center;
+          
+      
+          h1 {
+            display: block;
+            text-align: center;
+            width: 24px;
+            height: auto;
+            background-color: #fd7e14;
+            color: white;
+            padding: 5px 28px;
+            margin: 0;
+            font-weight: bolder;
+            font-size: 50px;
+            
+            
+      
+            
+          }
+        }
+      
+        .nav {
+          display: block;
+          text-align: center;
+          position: absolute;
+          height: 210px;
+          top: 40%;
+          margin-top: -120px;
+          width: 100%;
+      
+          a {
+            font-size: 30px;
+            color: white;
+            display: block;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+      
+            i {
+              transition: all 0.3s ease-out;
+            }
+      
+            &:hover {
+              color: #fd7e14;
+      
+              svg {
+                opacity: 0;
+              }
+      
+              &:after {
+                opacity: 1;
+              }
+            }
+      
+            &:after {
+              content: '';
+              font-size: 9px;
+              letter-spacing: 2px;
+              position: absolute;
+              bottom: 0;
+              display: block;
+              width: 100%;
+              text-align: center;
+              opacity: 0;
+              -webkit-transition: all 0.3s ease-out;
+              transition: all 0.3s ease-out;
+            }
+      
+            &:first-child {
+              &:after {
+                content: 'HOME';
+              }
+            }
+          }
+      
+          .about{
+            &:after {
+              content: 'ABOUT';
+            }
+          }
+      
+          .contact {
+            &:after {
+              content: 'CONTACT';
+            }
+          }
+      
+          a.portfolio {
+            &:after {
+              content: 'PORTFOLIO';
+            }
+          }
+          .resume{
+            &:after {
+              content: 'RESUME';
+            }
+          }
+        
+      
+          a.active {
+            svg {
+              color: #fd7e14;
+            }
+          }
+        }
+      
+        ul {
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          display: block;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+          margin: 0;
+      
+          li {
+            a {
+              padding: 7px 0;
+              display: block;
+              font-size: 15px;
+              line-height: 16px;
+              color: #4d4d4e;
+            }
+      
+            &:hover {
+              .anchor-icon {
+                color: #fd7e14;
+              }
+            }
+          }
+        }
+      }
+      
+      .nav-open {
+        left: 0;
+      }
+      .nav-closed {
+        left: 0;
+      }
+      .nav-button {
+        z-index: 2;
+      }
+      
+      
+      
+      @media screen and (max-width: 767px) {
+        .sidebar-toggle {
+          position: fixed;
+          color: #fff;
+          background-color: #fd7e14;  
+           bottom: 9rem;
+          right: 3rem;
+          cursor: pointer;
+          border-radius: 50%;
+          padding: 1rem;
+          border: 2px solid #fd7e14;
+          cursor: pointer;
+          display: block;
+          // font-size: 50px;
+       
+        
+          .sidebar-toggle:hover {
+            color: black;
+          }
+        }
+        .sidebar-toggle span {
+          font-size: 50px;
+      
+        }
+        .nav-open {
+          left: 0;
+        }
+        .nav-closed {
+          left: -320px;
+        }
+        .nav-button {
+          z-index: 2;
+        }
+      }
+      
+    

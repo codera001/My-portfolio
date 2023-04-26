@@ -1,0 +1,17 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/camangles.png",
+            "title": "Camangles",
+            "description": "e-commerce ",
+            "url": "https://codera001.github.io/veeducato/"
+        },
+        {
+            "cover": "/portfolio/veeducato.png",
+            "title": "Qeducato",
+            "description": "education",
+            "url": "http://camangles.42web.io/"
+        }
+       
+    ]
+}
