@@ -98,8 +98,7 @@ const Contact = () => {
                     <span>veranwoye9@gmail.com</span>
                 </div>
                 <div className="map-wrap">
-                    <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=jedo%20mass%20housing%20estate%20lugbe+(vera)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" ><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
-                    {/* <Popup>Vera lives here, come over for a cup of coffee :</Popup> */}
+                    <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=jedo%20mass%20housing%20estate%20lugbe+(vera)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" ><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>                  {/* <Popup>Vera lives here, come over for a cup of coffee :</Popup> */}
                 </div>
             </div >
             <Loader type="pacman" />

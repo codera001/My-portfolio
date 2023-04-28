@@ -4,6 +4,7 @@
  .home-page {
     margin:0;
     padding: 0;
+    width:100%;
     
         .text-zone {
             position: absolute;
@@ -165,7 +166,7 @@
             }
 
             p {
-                width:120%;
+                width:100%;
                 font-size: 14px;
                 // padding-right: 4rem; 
                 padding-top: 10px;
@@ -185,8 +186,8 @@
             img {
                 margin-top:3rem ;
                 padding: 0;
-              width: 35%;
-             height: 100vh;
+              width: 45%;
+             height: 80vh;
              bottom: 110px;
              align-content: center;
              float:right;
