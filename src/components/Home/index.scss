@@ -118,7 +118,7 @@
             margin-top: 5rem;
             padding: 0;
             height: 85vh;
-           bottom: 200px;
+        //    bottom: 200px;
            background-color: #0c0c14;
           
         
@@ -145,7 +145,7 @@
             width: 60%;
               top: 25%; 
                 left: 2%;
-            
+                
            
 
             h6 {
@@ -158,6 +158,7 @@
                 font-size: 34px;
                 margin: 0;
                 line-height: 34px;
+           
             }
 
             span {
@@ -177,7 +178,7 @@
         .ProfileImg {
             margin-top: 0;
             padding: 0;
-           bottom: 200px;
+        //    bottom: 200px;
            
         
           
@@ -186,11 +187,12 @@
             img {
                 margin-top:3rem ;
                 padding: 0;
-              width: 45%;
-             height: 80vh;
-             bottom: 110px;
+              width: 50%;
+             height: 50vh;
+            top : 100px;
              align-content: center;
              float:right;
+             position:relative;
             }
 
         }
