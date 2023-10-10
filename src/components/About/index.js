@@ -37,7 +37,7 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p className=''> 
             I'm a very ambitious fullstack web developer looking for a role in an
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.

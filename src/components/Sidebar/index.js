@@ -34,30 +34,30 @@ const Sidebar = () => {
         </button>
             <nav className='nav'>
                 <a href='#home' className='home'>
-                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faHome} />
                 </a>
 
                 <hr />
 
                 <a href='#about' className='about'>
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faUser} color="white" />
                 </a>
 
                 <hr />
 
                 <a href='#resume' className='resume'>
-                    <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faFile} color="white" />
                 </a>
 
                 <hr />
 
                 <a href='#portfolio' className='portfolio'>
-                    <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faSuitcase} color="white" />
                 </a>
 
                 <hr />
                 <a href='#contact' className='contact'>
-                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faEnvelope} color="white" />
                 </a>
 
                 <hr />
@@ -66,25 +66,25 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/vera-nwoye-042b10195'>
-                        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faLinkedin} color="white" />
                     </a>
                 </li>
 
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://github.com/codera001'>
-                        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faGithub} color="white" />
                     </a>
                 </li>
 
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://twitter.com/vera_martins199'>
-                        <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faTwitter} color="white" />
                     </a>
                 </li>
 
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.facebook.com/vuon.asy'>
-                        <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faFacebook} color="white" />
                     </a>
                 </li>
             </ul>

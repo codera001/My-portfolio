@@ -11,7 +11,19 @@
             "title": "Qeducato",
             "description": "education",
             "url": "http://camangles.42web.io/"
+        },
+        {
+            "cover": "/portfolio/diginums.jpeg",
+            "title": "Diginums",
+            "description": "Get sms from anyehere",
+            "url": "https://diginums.com/"
+        },
+        {
+            "cover": "/portfolio/certifieddump",
+            "title": "Certified dump",
+            "description": "Find and Get your exams",
+            "url": "https://certifieddump.com/"
         }
-       
+           
     ]
 }
