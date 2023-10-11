@@ -1,10 +1,12 @@
 
- 
+ .home-wrap{
+    background-color: #0c0c14;
  
  .home-page {
     margin:0;
     padding: 0;
-    width:100%;
+
+    // width:100%;
     
         .text-zone {
             position: absolute;
@@ -27,10 +29,10 @@
                 opacity: 1;
             }
 
-            h1 {
+            .home-name {
                 color: #fff;
-                font-size: 90px;
-                line-height: 90px;
+                // font-size: 90px;
+                // line-height: 90px;
                 margin: 0;
                 font-family: sans-serif;
                 font-weight: 900;
@@ -84,7 +86,6 @@
                 font-weight: bold;
                 font-size: 14px;
                 color: rgba(8, 253, 216, 0.411);
-                width: 120%;
             }
 
             button {
@@ -119,32 +120,41 @@
             padding: 0;
             height: 85vh;
         //    bottom: 200px;
-           background-color: #0c0c14;
+        //    background-color: #0c0c14;
           
         
              
-            img {
-                margin:0;
-                padding: 0;
-              width: 35%;
-             height: 100vh;
-             bottom: 100px;
-             align-items: end;
-             position: relative;
-             float: right;
-            }
+            
 
         }
     }
+ }
+@media screen  and (min-width:768px){
+   .home-name{
+    font-size: 90px;
+   } 
+   img {
+    margin:0;
+    padding: 0;
+  width: 35%;
+ height: 100vh;
+ bottom: 100px;
+ align-items: end;
+ position: relative;
+ float: right;
+}
+p{
+    width: 120%;
 
-
+}
+}
 
 @media (max-width:767px) {
     .home-page {
         .text-zone {
             width: 60%;
               top: 25%; 
-                left: 2%;
+                left: 5%;
                 
            
 
@@ -154,10 +164,11 @@
                 margin-top: 2rem;
             }
 
-            h1 {
+            .home-name{
                 font-size: 34px;
                 margin: 0;
                 line-height: 34px;
+            
            
             }
 
@@ -167,12 +178,13 @@
             }
 
             p {
-                width:100%;
+                width:90%;
                 font-size: 14px;
                 // padding-right: 4rem; 
                 padding-top: 10px;
                 font-weight: bolder;
-               
+                z-index: 2;
+            
             }
         }
         .ProfileImg {
@@ -189,7 +201,7 @@
                 padding: 0;
               width: 50%;
              height: 50vh;
-            top : 100px;
+            // top : 10px;
              align-content: center;
              float:right;
              position:relative;

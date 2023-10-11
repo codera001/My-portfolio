@@ -21,7 +21,8 @@ const Dashboard = () => {
 
     return (
        <div>
-           {user ? <Home /> : <Login />}
+           {/* {user ? <Home /> : <Login />} */}
+            <Home/>
        </div>
     )
 }

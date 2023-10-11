@@ -1,14 +1,14 @@
 .about-page{
   width:100%;
   position: relative;
+
     .text-zone{
         .header {
             color:  #fd7e14;
-            font-size: 50px;
+            // font-size: 50px;
             font-weight: bolder;        
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             letter-spacing: 5px;
-            margin-top: 18rem;
         }
 
         p{
@@ -34,7 +34,7 @@
     width: 50%;
     height: 100%;
     top: 0;
-    padding-top: 18%;
+    margin-top: 20%;
     margin-left: 0;
     position: absolute;
     right: 0;
@@ -124,6 +124,11 @@
   height:50vh;
 align-items: center;
  }
+ .header{
+  font-size: 30px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+ }
   
   }
 
@@ -131,5 +136,10 @@ align-items: center;
     #about {
 width: 80%;
 margin: 0 auto;
+    }
+
+    .header{
+      font-size: 50px;
+      margin-top: 10rem;
     }
   }

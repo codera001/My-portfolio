@@ -2,15 +2,10 @@ import './App.scss'
 // import { useLocation} from 'react-router-dom';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Home from './components/Home'
-import Sidebar from './components/Sidebar'
-import About from './components/About'
-import Contact from './components/Contact'
-import Resume from './components/Resume'
-import Portfolio from './components/Portfolio'
+import Main from './components/Main';
 import particles from "./utils.js/particles"
 // import { useCallback } from "react";
-// import Dashboard from './components/Dashboard'
+import Dashboard from './components/Dashboard'
 
 
 
@@ -31,12 +26,13 @@ const App = () => {
     <main>
       
       <Particles id="tsparticles" init={particlesInit} options={particles} />
-       <Sidebar/>
+       {/* <Sidebar/>
        <Home/>
        <About />
        <Resume />
       <Portfolio />
-      <Contact />
+      <Contact /> */}
+      <Main/>
        {/* <Dashboard /> */}
     </main>
     );

@@ -57,6 +57,7 @@ const Portfolio = () => {
 
     return (
         <>
+        <div className="portfolio-wrap">
             <div className="container portfolio-page" id="portfolio">
                 <div className="text-zone">
                     <p className="header-text">
@@ -71,6 +72,7 @@ const Portfolio = () => {
                
             </div>
             <Loader type="pacman" />
+            </div>
         </>
     );
 }
