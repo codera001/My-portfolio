@@ -6,7 +6,7 @@
     margin:0;
     padding: 0;
 
-    // width:100%;
+    width:100%;
     
         .text-zone {
             position: absolute;
@@ -154,7 +154,7 @@ p{
         .text-zone {
             width: 60%;
               top: 25%; 
-                left: 5%;
+                left: 5% !important;
                 
            
 
@@ -174,7 +174,7 @@ p{
 
             span {
                 font-size: 18px;
-                line-height: 18px;
+                line-height: 28px;
             }
 
             p {

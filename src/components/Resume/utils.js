@@ -1,11 +1,18 @@
 export const data = {
     experience: [
       {
+        title: "Luzoma Microsystems",
+        subTitle: "PH, Rivers",
+        description:
+          "Full stack Web Developer",
+          date: "December-2023 - Present",
+      },
+      {
         title: "Jam-Forte Technologies",
         subTitle: "FCT, Abuja",
         description:
           " Web Developer",
-          date: "April 2023- Present",
+          date: "April 2023- December-2023",
       },
       {
         title: "Biz-Marrow Technologies",
@@ -31,21 +38,21 @@ export const data = {
     ],
     education: [
         {
-            title: "Bachelor of Science",
+            // title: "Bachelor of Science",
             subTitle: "University of Port Harcourt",
             description:
               "Bachelor of science in Biology",
               date:"Jan 2016- Feb 2020"
           },
         {
-        title: "Secondary",
+        // title: "Secondary",
         subTitle: "Our Lady of Fatima College",
         description:
           "Senior Secondary School Certificate",
           date:"Sept 2009- July 2015"
       },
       {
-        title: "Primary",
+        // title: "Primary",
         subTitle: "Celias Montessori nursery and primary school",
         description:
           "First School Leaving Certificate",

@@ -39,13 +39,13 @@ const Contact = () => {
         <>
             <div className="container contact-page" id='contact'>
                 <div className="text-zone">
-                    <p className='header'>
+                    <h1 className='header'>
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
                             idx={15}
                         />
-                    </p>
+                    </h1>
                     <p>
                         I am interested in freelance opportunities - especially on ambitious
                         or large projects. However, if you have any other requests or
@@ -81,24 +81,25 @@ const Contact = () => {
                                     ></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className="flat-button" value="SEND" />
+                                    <input type="submit" className="flat-button mb-5" value="SEND" />
                                 </li>
                             </ul>
                         </form>
                     </div>
                 </div>
-                <div className="info-map">
+                <div className="info-map mt-5">
                     Nwoye Vera,
                     <br />
-                    Jedo Mass Housing Estate,
+                    No 12 Billy Avenue,
                     <br />
-                    Lugbe <br />
-                    FCT, Abuja <br />
+                    Rumuola <br />
+                    PH, Rivers state <br />
                     <br />
                     <span>veranwoye9@gmail.com</span>
                 </div>
-                <div className="map-wrap">
-                    <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=jedo%20mass%20housing%20estate%20lugbe+(vera)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" ><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>                  {/* <Popup>Vera lives here, come over for a cup of coffee :</Popup> */}
+                <div className="map-wrap mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127221.50699798323!2d6.8912396!3d4.8262496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cdb2848c9127%3A0x3dacb82adbc3db0e!2sVEE%20LUXE%20PLACE!5e0!3m2!1sen!2sng!4v1707838145903!5m2!1sen!2sng" width="100%" height="600"  ><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+                    {/* <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=jedo%20mass%20housing%20estate%20lugbe+(vera)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" ><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>                  <Popup>Vera lives here, come over for a cup of coffee :</Popup> */}
                 </div>
             </div >
             <Loader type="pacman" />

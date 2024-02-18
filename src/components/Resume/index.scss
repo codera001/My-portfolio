@@ -1,6 +1,7 @@
 .resume-page{
-  width:100%;
-
+//   width:100%;
+overflow-x: hidden;
+// background-color: red;
     .text-zone{
         .header {
             color:  #fd7e14;
@@ -20,6 +21,7 @@
         display: flex;
         width: 100%;
         padding: 20px;
+        // background-color: blue;
         
     
        .timeline-experience, .timeline-education{

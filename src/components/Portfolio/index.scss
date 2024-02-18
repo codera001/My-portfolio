@@ -1,11 +1,16 @@
-
+.portfolio-wrap{
+    // background-color: red;
+    // width: 100%;
+    overflow-x: hidden;
+}
 .portfolio-page {
-    padding-left: 100px;
-    padding-right: 50px;
-    width:100%;
+    // padding-left: 100px;
+    // padding-right: 50px;
+    width:80%;
     position: initial;
     height: 100%;
     // overflow: auto;
+    margin: 0 auto;
 
 
 
@@ -139,7 +144,7 @@
 }
 @media screen and (min-width: 767px)  {
     #portfolio {
-width: 80%;
+// width: 80%;
 margin: 0 auto;
     }
 

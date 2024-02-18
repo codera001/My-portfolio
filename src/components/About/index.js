@@ -53,13 +53,13 @@ const About = () => {
 
           <div className='flex'>
            <div className='flex-one'>
-           <p><span>Name:</span>Nwoye Vera</p>
-            <p><span>Birthday:</span>28 December 1999</p>
-            <p><span>Address:</span> Lugbe, Abuja</p>
+           <p><span className='me-3'>Name:</span>Nwoye Vera</p>
+            <p><span className='me-3'>Birthday:</span>28 December 1999</p>
+            <p><span className='me-3'>Address:</span> Rumuola, Port Harcourt</p>
            </div>
            <div className='flex-two'>
-           <p><span>Phone:</span>09031967914</p>
-            <p><span>Email:</span>veranwoye9@gmail.com</p>
+           <p><span className='me-3'>Phone:</span>09031967914</p>
+            <p><span className='me-3'>Email:</span>veranwoye9@gmail.com</p>
         
            </div>
           </div>

@@ -30,6 +30,9 @@ body {
   /* overflow-y: scroll;
   overflow-x: hidden; */
   display: block;
+  width: 100%;
+  /* overflow-x:hidden; */
+
 }
 
 .dashboard {

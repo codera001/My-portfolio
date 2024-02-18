@@ -1,20 +1,21 @@
 .contact-page {
-  width:100%;
-  
+  // background-color: red;
     .text-zone {
         .header {
             color:  #fd7e14;
-            font-size: 50px;
             font-weight: bolder;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             letter-spacing: 5px;
             margin-top: 18rem;
             margin-bottom: 0;
+
         }
 
         p{
             font-size: 16px;
             color:white;
+            width:100%;
+
         }
     }
 }
@@ -93,6 +94,11 @@
       text-align: center;
       margin-right: 10px;
     }
+
+    .flat-button:hover{
+      color: #fff;
+      background-color: #fd7e14;
+    }
   }
   
   .map-wrap {
@@ -120,7 +126,7 @@
   
   .info-map {
     position: absolute;
-    background: #000;
+    // background: #000;
     // top: 50px;
     right: 30%;
     z-index: 999999;
@@ -133,6 +139,7 @@
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
+    // margin-top: 6rem;
   
     
   
@@ -142,8 +149,14 @@
       }
     
   }
-  
+  @media screen and (max-width: 767px) {
+ 
+.header{
+    font-size: 30px;
+}
+}
   @media screen and (max-width: 1200px) {
+    
     .map-wrap {
       float: none;
       margin: 0;
@@ -163,5 +176,11 @@
     #contact {
 width: 80%;
 margin: 0 auto;
+
+.header{
+  font-size: 50px;
+
+}
     }
+
   }

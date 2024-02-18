@@ -186,7 +186,7 @@
 
       @media screen and (max-width: 767px) {
         .nav-bar { 
-          background: #181818;
+          background-color: #0c0c14;
           position: initial;
           height: auto;
           min-height: auto;
@@ -206,15 +206,20 @@
             z-index: 2;
             position: fixed;
             // display: flex;
+            background-color: #fd7e14;
+
             
       
             &.mobile-show {
+              background-color: #0c0c14;
+
               display: flex;
               justify-content: center;
               text-align: center;
             
             }
             .nav-link{
+             
               font-size: 20px;
               padding-right: 2rem;
               align-items: center;
@@ -228,13 +233,15 @@
               font-size: 0px;
               line-height: 0;
               height: 0;
+              
             }
-      
+          
             a:after {
               opacity: 1;
               position: initial;
               width: auto;
               margin-left: 10PX;
+
             }
       
             a svg {
@@ -248,8 +255,10 @@
               top: 15px;
               right: 15px;
               display: block;
+            
            }
         }
       }
+
       
     
