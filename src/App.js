@@ -26,14 +26,7 @@ const App = () => {
     <main>
        
       <Particles id="tsparticles" init={particlesInit} options={particles} /> 
-       {/* <Sidebar/>
-       <Home/>
-       <About />
-       <Resume />
-      <Portfolio />
-      <Contact /> */}
       <Main/>
-       {/* <Dashboard /> */}
     </main>
     );
 };

@@ -1,156 +1,189 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faFile, faSuitcase, faClose, faBars} from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { useState } from 'react'
-
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faFile,
+  faSuitcase,
+  faClose,
+  faBars,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import { useState, useEffect } from "react";
 
 const Sidebar = () => {
-//  const [isNavOpen, setIsNavOpen] = useState(false);
- const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false)
+  const [activeSection, setActiveSection] = useState('home')
  
-//  useEffect(() => {
-//          const handleResize = () => {
-//          if(window.innerWidth < 767 && isNavOpen){
-//            setIsNavOpen(false);
-//         }
-//     };
-//      window.addEventListener("resize", handleResize);
-//      return () => window.addEventListener("resize", handleResize);
-//   }, [isNavOpen]);
-
-    return (
+//   intersection observer API for active state upon scrolling
+useEffect(() => {
+    const sections = document.querySelectorAll(
+      "#home,#about,#resume,#portfolio,#contact"
+    );
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0.15) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: [0.15],
+        rootMargin: "-120px 0px -40% 0px",
+      }
+    );
+  
+    sections.forEach((section) => observer.observe(section));
+  
+    return () => observer.disconnect();
+  }, []);
+  return (
     <>
+      <div className="nav-bar">
+        <Link className="logo" to="/" onClick={() => setShowNav(false)}>
+          <h1>
+            <strong>VN</strong>
+          </h1>
+        </Link>
+
      
-
-        <div className='nav-bar' >
-            <Link className='logo' to='/'   onClick={() => setShowNav(false)}>
-                <h1><strong>V</strong></h1>
-            </Link>
-           
-            {/* <button className='sidebar-toggle' onClick={()=> setIsNavOpen(!isNavOpen)}>
-            <span class='material-symbols-outlined'>{isNavOpen ?  "toggle_on" : "toggle_off"}</span>
-           
-        </button> */}
-            <nav className={`nav ${showNav ? 'mobile-show' : ''}`}> 
-                {/* <a href='#home' className='home'>
-                    <FontAwesomeIcon icon={faHome} />
-                </a> */}
-                <a 
-          exact="true"
-          activeclassname="active"
-          className='home nav-link'
-          href='#home'
-        //   onClick={() => setShowNav(false)}
+        <nav className={`nav ${showNav ? 'mobile-show' : ''}`}>
+          <a
+            href="#home"
+            className={`nav-link home ${
+              activeSection === 'home' ? 'active' : ''
+            }`}
+            onClick={() => {
+              setActiveSection('home')
+              setShowNav(false)
+            }}
           >
-            
-          <FontAwesomeIcon icon={faHome} color="white" />
-        
-        </a>
+            <FontAwesomeIcon icon={faHome} />
+          </a>
 
-                <hr />
-                <a 
-          activeclassname="active"
-          className="about nav-link"
-          href="#about"
-        //   onClick={() => setShowNav(false)}
+          <a
+            href="#about"
+            className={`nav-link about ${
+              activeSection === 'about' ? 'active' : ''
+            }`}
+            onClick={() => {
+              setActiveSection('about')
+              setShowNav(false)
+            }}
           >
-            
-          <FontAwesomeIcon icon={faUser} color="white" />
-          
-        </a>
-                {/* <a href='#about' className='about'>
-                    <FontAwesomeIcon icon={faUser} color="white" />
-                </a> */}
+            <FontAwesomeIcon icon={faUser}  />
+          </a>
 
-                <hr />
-                <a
-          activeclassname="active"
-          className="resume nav-link"
-          href='#resume'
-        //   onClick={() => setShowNav(false)}
-        >
-            
-          <FontAwesomeIcon icon={faFile} color="white" />
-        </a>
-                {/* <a href='#resume' className='resume'>
-                    <FontAwesomeIcon icon={faFile} color="white" />
-                </a> */}
+         
+          <a
+            href="#resume"
+            className={`nav-link resume ${
+              activeSection === 'resume' ? 'active' : ''
+            }`}
+            onClick={() => {
+              setActiveSection('resume')
+              setShowNav(false)
+            }}
+          >
+            <FontAwesomeIcon icon={faFile}  />
+          </a>
 
-                <hr />
-                <a
-          activeclassname="active"
-          className="portfolio nav-link"
-          href="#portfolio"
-        //   onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="white" />
-        </a>
+          <a
+            href="#portfolio"
+            className={`nav-link portfolio ${
+              activeSection === 'portfolio' ? 'active' : ''
+            }`}
+            onClick={() => {
+              setActiveSection('portfolio')
+              setShowNav(false)
+            }}
+          >
+            <FontAwesomeIcon icon={faSuitcase} />
+          </a>
 
-                {/* <a href='#portfolio' className='portfolio'>
-                    <FontAwesomeIcon icon={faSuitcase} color="white" />
-                </a> */}
+          <a
+            href="#contact"
+            className={`nav-link contact ${
+              activeSection === 'contact' ? 'active' : ''
+            }`}
+            onClick={() => {
+              setActiveSection('contact')
+              setShowNav(false)
+            }}
+          >
+            <FontAwesomeIcon icon={faEnvelope}  />
+          </a>
 
-                <hr />
-                <a
-          activeclassname="active"
-          className="contact nav-link"
-          href="#contact"
-        //   onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="white" />
-        </a>
+          <FontAwesomeIcon
+            onClick={() => setShowNav(false)}
+            icon={faClose}
+            color="white"
+            size="3x"
+            className="close-icon"
+          />
+        </nav>
 
-                {/* <a href='#contact' className='contact'>
-                    <FontAwesomeIcon icon={faEnvelope} color="white" />
-                </a> */}
+        <ul className="social-links">
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/vera-nwoye-042b10195"
+            >
+              <FontAwesomeIcon icon={faLinkedin}  />
+            </a>
+          </li>
 
-                <hr />
-                <FontAwesomeIcon 
-          onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="white"
-          size="3x"
-          className='close-icon' />
-            </nav>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/codera001"
+            >
+              <FontAwesomeIcon icon={faGithub}  />
+            </a>
+          </li>
 
-            <ul>
-                <li>
-                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/vera-nwoye-042b10195'>
-                        <FontAwesomeIcon icon={faLinkedin} color="white" />
-                    </a>
-                </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/vera_martins199"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </li>
 
-                <li>
-                    <a target="_blank" rel='noreferrer' href='https://github.com/codera001'>
-                        <FontAwesomeIcon icon={faGithub} color="white" />
-                    </a>
-                </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/vuon.asy"
+            >
+              <FontAwesomeIcon icon={faFacebook}  />
+            </a>
+          </li>
+        </ul>
 
-                <li>
-                    <a target="_blank" rel='noreferrer' href='https://twitter.com/vera_martins199'>
-                        <FontAwesomeIcon icon={faTwitter} color="white" />
-                    </a>
-                </li>
-
-                <li>
-                    <a target="_blank" rel='noreferrer' href='https://www.facebook.com/vuon.asy'>
-                        <FontAwesomeIcon icon={faFacebook} color="white" />
-                    </a>
-                </li>
-            </ul>
-
-            <FontAwesomeIcon 
+        <FontAwesomeIcon
           onClick={() => setShowNav(true)}
           icon={faBars}
-          color="white"
+          color="#5b84c4"
           size="3x"
-          className='hamburger-icon' />
-        </div>
+          className="hamburger-icon"
+        />
+      </div>
     </>
-    );
-    };
-
+  )
+}
 
 export default Sidebar

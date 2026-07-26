@@ -32,10 +32,11 @@ const Portfolio = () => {
             <div className="images-container">
                 {
                     portfolio.map((port, idx) => {
+                        console.log(port);
                         return (
                             <div className="image-box" key={idx}>
                                 <img
-                                    src={port.image}
+                                    src={`/My-portfolio/portfolio/${port.image}`}
                                     className="portfolio-image"
                                     alt="portfolio" />
                                 <div className="content">

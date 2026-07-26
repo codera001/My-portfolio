@@ -2,7 +2,7 @@
   // background-color: red;
     .text-zone {
         .header {
-            color:  #fd7e14;
+          color:  #0D1B3D;
             font-weight: bolder;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             letter-spacing: 5px;
@@ -13,7 +13,8 @@
 
         p{
             font-size: 16px;
-            color:white;
+            font-weight: 400;
+            color:#333A4D;
             width:100%;
 
         }
@@ -58,7 +59,7 @@
     input[type='text'],
     input[type='email'] {
       width: 100%;
-      border: 1px solid #fd7e14;
+      border: 1px solid #0D1B3D;
       background: #fff;
       height: 50px;
       font-size: 16px;
@@ -69,7 +70,7 @@
   
     textarea {
       width: 100%;
-      border: 1px solid #fd7e14;
+      border: 1px solid #0D1B3D;
       background: #fff;
       height: 50px;
       font-size: 16px;
@@ -80,15 +81,15 @@
     }
   
     .flat-button {
-      color: #fd7e14;
+      color: #ffff;
       font-size: 11px;
       letter-spacing: 3px;
       text-decoration: none;
       padding: 8px 10px;
-      border: 1px solid #fd7e14;
+      border: 1px solid;
       float: left;
       border-radius: 4px;
-      background: 0 0;
+      background:#0D1B3D;
       text-transform: uppercase;
       float: right;
       text-align: center;
@@ -102,7 +103,7 @@
   }
   
   .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
+    background: #5b84c4;
     float: right;
     width: 100%;
     height: 115%;

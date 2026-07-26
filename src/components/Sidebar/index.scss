@@ -1,264 +1,381 @@
-// .sidebar-toggle {
-//   display: block;
-// }
+/* ======================================
+   SIDEBAR
+====================================== */
 
+.nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 78px;
+  height: 100vh;
 
-    .nav-bar {
-        background:#0c0c14;
-        color: white;
-        width: 80px;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 3;
-        display: flex;
-        flex-direction: column;
-        
-       
-     
-        .logo {
-          display: block;
-          text-decoration: none;
-          font-family: sans-serif;
-          text-align: center;
-          
-      
-          h1 {
-            display: block;
-            text-align: center;
-            // width: ;
-            height: auto;
-            background-color: #fd7e14;
-            color: white;
-            padding: 5px 28px;
-            margin: 0;
-            font-weight: bolder;
-            font-size: 50px;
-            
-            
-      
-            
-          }
-        }
-      
-        .nav {
-          // display: block;
-          text-align: center;
-          position: absolute;
-          // height: 210px;
-          
-          margin-top: -120px;
-          width: 100%;
+  background: #0d1b3d;
 
-           .nav-link{
-            font-size: 25px;
-            color: white;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-        
-            text-align: center;
-            // margin: 0 2rem;
-           }
-      
-          a {
-            
-      
-            i {
-              transition: all 0.3s ease-out;
-            }
-      
-            &:hover {
-              color: #fd7e14;
-      
-              svg {
-                opacity: 0;
-              }
-      
-              &:after {
-                opacity: 1;
-              }
-            }
-      
-            &:after {
-              content: '';
-              font-size: 9px;
-              letter-spacing: 2px;
-              position: absolute;
-              bottom: 0;
-              display: block;
-              width: 100%;
-              text-align: center;
-              opacity: 0;
-              -webkit-transition: all 0.3s ease-out;
-              transition: all 0.3s ease-out;
-            }
-      
-            &:first-child {
-              &:after {
-                content: 'HOME';
-              }
-            }
-          }
-      
-          .about{
-            &:after {
-              content: 'ABOUT';
-            }
-          }
-      
-          .contact {
-            &:after {
-              content: 'CONTACT';
-            }
-          }
-      
-          a.portfolio {
-            &:after {
-              content: 'PORTFOLIO';
-            }
-          }
-          .resume{
-            &:after {
-              content: 'RESUME';
-            }
-          }
-        
-      
-          a.active {
-            svg {
-              color: #fd7e14;
-            }
-          }
-        }
-      
-        ul {
-          position: absolute;
-          bottom: 20px;
-          width: 100%;
-          display: block;
-          padding: 0;
-          list-style: none;
-          text-align: center;
-          margin: 0;
-      
-          li {
-            a {
-              padding: 7px 0;
-              display: block;
-              font-size: 15px;
-              line-height: 16px;
-              color: #4d4d4e;
-            }
-      
-            &:hover {
-              .anchor-icon {
-                color: #fd7e14;
-              }
-            }
-          }
-        }
-      }
-      
-      // .nav-open {
-      //   left: 0;
-      // }
-      // .nav-closed {
-      //   left: 0;
-      // }
-      // .nav-button {
-      //   z-index: 2;
-      // }
-      
-      .hamburger-icon, .close-icon {
-        display: none;
-      }
-      
-       @media screen and (min-width: 768px) {
-          nav{
-            margin: 0 2rem;
-            top: 40%;
-          }
-       }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-      @media screen and (max-width: 767px) {
-        .nav-bar { 
-          background-color: #0c0c14;
-          position: initial;
-          height: auto;
-          min-height: auto;
-      
-           ul, nav {
-            display: none;
-           }
-         h1{
-          font-size: 30px;
-         }
-           nav {
-            width: 100%;
-            top:70px !important;
-            left: 0;
-            height: 10px !important;
-            margin-top: 0 !important;
-            z-index: 2;
-            position: fixed;
-            // display: flex;
-            background-color: #fd7e14;
+  padding: 18px 0;
 
-            
-      
-            &.mobile-show {
-              background-color: #0c0c14;
+  box-shadow: 5px 0 18px rgba(0,0,0,.18);
+  z-index: 999;
+}
 
-              display: flex;
-              justify-content: center;
-              text-align: center;
-            
-            }
-            .nav-link{
-             
-              font-size: 20px;
-              padding-right: 2rem;
-              align-items: center;
-              text-align: center;
-            }
-      
-            a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 0px;
-              line-height: 0;
-              height: 0;
-              
-            }
-          
-            a:after {
-              opacity: 1;
-              position: initial;
-              width: auto;
-              margin-left: 10PX;
+/* ======================================
+   LOGO
+====================================== */
 
-            }
-      
-            a svg {
-              opacity: 1 !important;
-            }
-           }
-      
-           .hamburger-icon,
-           .close-icon {
-              position: absolute;
-              top: 15px;
-              right: 15px;
-              display: block;
-            
-           }
-        }
-      }
+.logo{
+  width:60px;
+  height:60px;
 
-      
-    
+  border-radius:16px;
+
+  background:rgba(255,255,255,.08);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-decoration:none;
+
+  transition:.4s;
+}
+
+.logo:hover{
+  background:#fd7e14;
+  // transform:translateY(-2px);
+  transform:rotate(-8deg) scale(1.05);
+}
+
+.logo h1{
+
+  margin:0;
+
+  color:#5b84c4;
+
+  font-size:38px;
+
+  font-weight:800;
+
+  transition:.3s;
+}
+
+.logo:hover h1{
+
+  color:white;
+}
+
+/* ======================================
+   NAVIGATION
+====================================== */
+
+.nav{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:18px;
+
+  flex:1;
+
+  justify-content:center;
+
+  width:100%;
+}
+
+.nav-link{
+
+  width:54px;
+  
+  height:54px;
+  
+  display:flex;
+  
+  justify-content:center;
+  
+  align-items:center;
+  
+  border-radius:14px;
+  
+  color:#8EA7D5;
+  
+  transition:.35s ease;
+  
+  position:relative;
+  }
+  
+  .nav-link:hover{
+  
+  background:rgba(255,255,255,.08);
+  
+  color:#FD7E14;
+  
+  transform:translateY(-3px);
+  }
+  
+  .nav-link.active{
+  
+  background:#FD7E14;
+  
+  color:white;
+  
+  box-shadow:
+  
+  0 12px 25px rgba(253,126,20,.35);
+  
+  transform:scale(1.08);
+  }
+  
+  .nav-link svg{
+  
+  color:inherit;
+  
+  font-size:22px;
+  }
+
+/* ======================================
+   TOOLTIP
+====================================== */
+
+.nav-link::after{
+
+  content:attr(data-title);
+  
+  position:absolute;
+  
+  left:78px;
+  
+  background:#0D1B3D;
+  
+  color:white;
+  
+  padding:8px 14px;
+  
+  border-radius:10px;
+  
+  font-size:12px;
+  
+  opacity:0;
+  
+  pointer-events:none;
+  
+  transition:.25s;
+  }
+  
+  .nav-link:hover::after{
+  
+  opacity:1;
+  
+  left:86px;
+  }
+
+.nav-link.home::after{
+  content:"Home";
+}
+
+.nav-link.about::after{
+  content:"About";
+}
+
+.nav-link.portfolio::after{
+  content:"Portfolio";
+}
+
+.nav-link.resume::after{
+  content:"Resume";
+}
+
+.nav-link.contact::after{
+  content:"Contact";
+}
+
+/* ======================================
+   SOCIALS
+====================================== */
+
+.social-links{
+
+  list-style:none;
+
+  padding:0;
+
+  margin:0 0 10px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:16px;
+}
+
+.social-links li{
+
+  list-style:none;
+}
+
+.social-links a{
+
+  color:#9fb6d8;
+
+  font-size:18px;
+
+  transition:.3s;
+}
+
+.social-links a:hover{
+
+  color:#fd7e14;
+
+  transform:scale(1.15);
+}
+
+/* ======================================
+   HAMBURGER
+====================================== */
+
+.hamburger-icon,
+.close-icon{
+
+  display:none;
+
+  cursor:pointer;
+
+  color:white;
+
+  font-size:28px;
+}
+
+/* ======================================
+   TABLET
+====================================== */
+
+@media (max-width:992px){
+
+.nav-bar{
+
+width:72px;
+}
+
+.logo{
+
+width:56px;
+height:56px;
+}
+
+.logo h1{
+
+font-size:34px;
+}
+
+}
+
+/* ======================================
+   MOBILE
+====================================== */
+
+@media(max-width:768px){
+
+.nav-bar{
+
+width:100%;
+
+height:70px;
+
+left:0;
+
+top:0;
+
+padding:0 20px;
+
+flex-direction:row;
+
+justify-content:space-between;
+
+align-items:center;
+}
+
+.logo{
+
+margin:0;
+}
+
+.nav{
+
+display:none;
+}
+
+.social-links{
+
+display:none;
+}
+
+.nav.mobile-show{
+
+display:flex;
+
+position:absolute;
+
+top:70px;
+
+left:0;
+
+right:0;
+
+background:#0d1b3d;
+
+padding:20px;
+
+gap:10px;
+
+flex-direction:column;
+
+align-items:center;
+
+animation:slideDown .35s ease;
+}
+
+.nav.mobile-show .nav-link{
+
+width:100%;
+
+height:50px;
+
+border-radius:10px;
+
+justify-content:center;
+}
+
+.hamburger-icon,
+.close-icon{
+
+display:block;
+}
+
+}
+
+/* ======================================
+   ANIMATION
+====================================== */
+
+@keyframes slideDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-20px);
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+}

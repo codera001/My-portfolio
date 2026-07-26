@@ -41,7 +41,7 @@ const Resume = () => {
                         <h3 className='timeline_experience_header-text'>Experience</h3>
                         <VerticalTimeline
                             layout={"1-column"}
-                            lineColor="#fd7e14"
+                            lineColor="#0D1B3D"
                         >
                             {data.experience.map((item, i) => (
                                 <VerticalTimelineElement
@@ -49,14 +49,14 @@ const Resume = () => {
                                     className="timeline__experience__vertical-timeline-element"
                                     contentStyle={{
                                         background: 'none',
-                                        color: '#fd7e14',
-                                        border: '1.5px solid #fd7e14'
+                                        color: '#0D1B3D',
+                                        border: '1.5px solid #0D1B3D'
                                         
                                     }}
                 
                                     icon={<MdWork />}
                                     iconStyle={{
-                                        background: '#181818',
+                                        background: '#0D1B3D',
                                         color: '#fd7e14',
 
                                     }}
@@ -80,7 +80,7 @@ const Resume = () => {
                         <h3 className='timeline_education_header-text'>Education</h3>
                         <VerticalTimeline
                             layout={"1-column"}
-                            lineColor="#fd7e14"
+                            lineColor="#0D1B3D"
                         >
                             {data.education.map((item, i) => (
                                 <VerticalTimelineElement
@@ -88,8 +88,8 @@ const Resume = () => {
                                     className="timeline__experience__vertical-timeline-element"
                                     contentStyle={{
                                         background: 'none',
-                                        color: '#fd7e14',
-                                        border: '1.5px solid #fd7e14'
+                                        color: '#0D1B3D',
+                                        border: '1.5px solid #0D1B3D'
                                     }}
                                 
                                     icon={<MdWork />}

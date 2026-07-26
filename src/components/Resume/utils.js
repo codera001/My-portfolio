@@ -1,11 +1,18 @@
 export const data = {
     experience: [
       {
+        title: "Fidelity Bank Plc",
+        subTitle: "PH, Rivers",
+        description:
+          "Relationship Manager",
+          date: "August 2024 - June 2026",
+      },
+      {
         title: "Luzoma Microsystems",
         subTitle: "PH, Rivers",
         description:
           "Full stack Web Developer",
-          date: "December-2023 - Present",
+          date: "December-2023 - July 2024",
       },
       {
         title: "Jam-Forte Technologies",
