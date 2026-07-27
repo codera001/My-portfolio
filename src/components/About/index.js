@@ -29,28 +29,23 @@ const About = () => {
       <div className=" about-page" id="about">
         <div className="about-wrap">
           <div className="text-zone">
-            <h1 className="header">
+            <p className="header">
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={['B', 'i', 'o', 'g', 'r', 'a ', 'p', 'h', 'y']}
                 idx={15}
-                // color = '#0D1B3D !important'
               />
-            </h1>
-            <p className="">
-              I'm a very ambitious fullstack web developer looking for a role in
-              an established IT company with the opportunity to work with the
-              latest technologies on challenging and diverse projects.
+            </p>
+            
+
+            <p>
+            I'm a Full Stack Web Developer who enjoys building modern, responsive, and user-focused web applications. I started my journey in tech with a curiosity about how websites work, and that curiosity has grown into a passion for creating digital experiences that are both functional and visually appealing.
             </p>
             <p align="LEFT">
-              I'm quiet confident, naturally curious, and perpetually working on
-              improving my chops one design problem at a time. I have skills in
-              HTML, CSS, BOOTSTRAP ,JAVASCRIPT, REACT,PYTHON, DJANGO, PHP,
-              MYSQL, NODEJS, MONGO DB, POSTGRESS SQL
+            I work with HTML, CSS, Bootstrap, JavaScript, React, Python, Django, PHP, Node.js, MySQL, PostgreSQL, and MongoDB, and I'm always eager to expand my knowledge by learning new tools and best practices. I enjoy solving problems, paying attention to the small details, and continuously improving my skills through hands-on projects.
             </p>
             <p>
-              If I need to define myself in one sentence that would be
-              passionate, goal driven and tech-obsessed!!!
+            When I'm not coding, you'll usually find me exploring new technologies, refining personal projects, or learning something that helps me become a better developer. I'm excited about joining a team where I can contribute, keep learning, and help build software that creates real value.
             </p>
 
             <div className="flex">

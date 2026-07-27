@@ -25,7 +25,8 @@ const Resume = () => {
 
     return (
         <>
-            <div className="container resume-page" id='resume'>
+            <div className="resume-page" id='resume'>
+                <div className='resume-wrap'>
                 <div className="text-zone">
                     <p className="header">
                         <AnimatedLetters
@@ -38,7 +39,7 @@ const Resume = () => {
       
                 <div className='timeline'>
                     <div className='timeline-experience'>
-                        <h3 className='timeline_experience_header-text'>Experience</h3>
+                        <h6 className='timeline_experience_header-text'>Experience</h6>
                         <VerticalTimeline
                             layout={"1-column"}
                             lineColor="#0D1B3D"
@@ -49,8 +50,9 @@ const Resume = () => {
                                     className="timeline__experience__vertical-timeline-element"
                                     contentStyle={{
                                         background: 'none',
-                                        color: '#0D1B3D',
-                                        border: '1.5px solid #0D1B3D'
+                                        color: '#555',
+                                        fontWeight: '500',
+                                        border: '1.5px solid #0D1B3D',
                                         
                                     }}
                 
@@ -77,7 +79,7 @@ const Resume = () => {
                         </VerticalTimeline>
                     </div>
                     <div className='timeline-education'>
-                        <h3 className='timeline_education_header-text'>Education</h3>
+                        <h6 className='timeline_education_header-text'>Education</h6>
                         <VerticalTimeline
                             layout={"1-column"}
                             lineColor="#0D1B3D"
@@ -88,13 +90,14 @@ const Resume = () => {
                                     className="timeline__experience__vertical-timeline-element"
                                     contentStyle={{
                                         background: 'none',
-                                        color: '#0D1B3D',
-                                        border: '1.5px solid #0D1B3D'
+                                        color: '#555',
+                                        fontWeight: '500',
+                                        border: '1.5px solid #0D1B3D',
                                     }}
                                 
                                     icon={<MdWork />}
                                     iconStyle={{
-                                        background: '#181818',
+                                        background: '#0D1B3D',
                                         color: '#fd7e14',
 
                                     }}
@@ -114,6 +117,7 @@ const Resume = () => {
                             ))}
                         </VerticalTimeline>
                     </div>
+                </div>
                 </div>
             </div>
             <Loader type="pacman" />

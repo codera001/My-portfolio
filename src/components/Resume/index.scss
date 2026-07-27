@@ -1,54 +1,65 @@
-.resume-page{
-//   width:100%;
-overflow-x: hidden;
-// background-color: red;
-    .text-zone{
-        .header {
-            color:  #0D1B3D;
-            
-            // font-size: 60px;
-            font-weight: bolder;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            letter-spacing: 5px;
-            margin-top: 18rem;
-        } 
-    }
- 
-    .resume{
-        height: 100%;
-    }
-    
-    .timeline{
-        display: flex;
+.resume-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10rem 2rem;
+    align-items: center;
+    background: #e6f0fa;
+
+    .resume-wrap {
         width: 100%;
-        padding: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .text-zone {
+        padding: 0 10rem;
+
+        .header {
+            color: #0d1b3d;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+
+
+    .timeline {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        width: 100%;
+        padding: 0 9rem;
+
         // background-color: blue;
-        
-    
-       .timeline-experience, .timeline-education{
-            width: 50%;
-            gap: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-    
-            .timeline_experience_header-text, .timeline_education_header-text{
+
+
+        .timeline-experience,
+        .timeline-education {
+            flex: 1;
+
+
+            .timeline_experience_header-text,
+            .timeline_education_header-text {
                 display: inline-block;
                 color: #fd7e14;
                 font-size: 26px;
                 font-weight: 700;
                 line-height: 1rem;
                 letter-spacing: 0.5px;
+                text-align: left;
                 position: relative;
-                text-transform:capitalize;
-                padding: 5px 10px;
+                padding: 1rem 3rem;
                 border-bottom: 2px solid #fd7e14;
                 animation: fadeInUp 2s 2s;
-                animation-fill-mode: forwards;      
+                animation-fill-mode: forwards;
             }
-    
-            .timeline_experience_header-text::before,    .timeline_experience_header-text::after{
+
+            .timeline_experience_header-text::before,
+            .timeline_experience_header-text::after {
                 position: absolute;
                 content: '';
                 width: 2px;
@@ -59,7 +70,8 @@ overflow-x: hidden;
                 animation-fill-mode: forwards;
             }
 
-            .timeline_education_header-text::before,    .timeline_education_header-text::after{
+            .timeline_education_header-text::before,
+            .timeline_education_header-text::after {
                 position: absolute;
                 content: '';
                 width: 2px;
@@ -69,64 +81,70 @@ overflow-x: hidden;
                 animation: fadeInUp 2s 2s;
                 animation-fill-mode: forwards;
             }
-    
-            .timeline_experience_header-text, .timeline_education_header-text::before{
+
+            .timeline_experience_header-text,
+            .timeline_education_header-text::before {
                 left: 0;
             }
-    
-            .timeline_experience_header-text, .timeline_education_header-textt::after{
+
+            .timeline_experience_header-text,
+            .timeline_education_header-text::after {
                 right: 0;
             }
-    
-            &__vertical-timeline-element{
+
+            &__vertical-timeline-element {
                 padding: 0px 0px 30px 0px;
-    
-                &:last-child{
+
+                &:last-child {
                     padding-bottom: 0px;
                 }
             }
-            .vertical-timeline-element-title-wrapper{
+
+            .vertical-timeline-element-title-wrapper {
                 display: flex;
                 align-items: center;
-                
-    
-                h3,h4{
+
+
+                h3,
+                h4 {
                     font-size: 16px;
                     animation: fadeInUp 2s 2s;
                     animation-fill-mode: forwards;
                     color: #333A4D;
 
                 }
-    
-                h4{
+
+                h4 {
                     margin-left: 8px;
                     animation: fadeInUp 2s 2s;
                     animation-fill-mode: forwards;
                     color: #333A4D;
 
                 }
-          
-    
+
+
             }
-    
-            .vertical-timeline-element-title-wrapper-description{
+
+            .vertical-timeline-element-title-wrapper-description {
                 font-size: 14px;
                 color: #333A4D;
             }
+
             .vertical-timeline-element-title-wrapper-date {
                 color: #333A4D;
 
                 font-size: 14px;
             }
-            .vertical-timeline-element-content{
+
+            .vertical-timeline-element-content {
                 box-shadow: none;
             }
-    
-            .vertical-timeline-element-content-arrow{
+
+            .vertical-timeline-element-content-arrow {
                 display: none;
             }
-    
-            .vertical-timeline-element-date{
+
+            .vertical-timeline-element-date {
                 opacity: 1;
                 color: #333A4D;
 
@@ -134,43 +152,181 @@ overflow-x: hidden;
             }
         }
     }
-    
-  
+
+
+    .timeline__experience__vertical-timeline-element {
+        border-bottom: 3px solid #fff;
+
+    }
 }
 
-.timeline__experience__vertical-timeline-element{
-border-bottom: 3px solid #fff;
-}
-@media only screen and (max-width : 768px){
+@media (max-width: 992px) {
+
     .resume-page {
-     margin-left: 1rem;
-     .timeline{
-         flex-direction: column;
-         &__experience, &__education{
-             width: 100%;
-             gap: 2rem;
 
-         }
+        // padding: 6rem 2rem;
 
-         
-         .timeline-experience, .timeline-education{
-            width: 90%;
-           display: block;
-          
+        .text-zone {
+            max-width: 100%;
         }
-     }
 
-    
-    }
-    #resume{
-        width: 90%;
-        margin: 0 auto;
+        .timeline {
+
+            gap: 2rem;
+
+            .timeline-experience,
+            .timeline-education {
+
+                width: 50%;
             }
-     
- }
- @media screen and (min-width: 767px)  {
-    #resume{
-width: 80%;
-margin: 0 auto;
+
+            .vertical-timeline-element-date {
+                font-size: 15px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+        }
+
     }
-  }
+
+}
+
+
+@media (max-width:768px) {
+
+    .resume-page {
+
+        // padding: 6rem 2rem;
+
+
+        .text-zone {
+            padding: 0;
+            text-align: left;
+
+            .header {
+
+                font-size: 2.5rem;
+
+                margin-bottom: 3rem;
+
+            }
+
+        }
+
+        .timeline {
+
+            flex-direction: column;
+            padding: 0;
+
+            gap: 4rem;
+
+            .timeline-experience,
+            .timeline-education {
+
+                width: 100%;
+
+
+            .timeline_experience_header-text,
+            .timeline_education_header-text {
+
+                font-size: 16px;
+
+            }
+            }
+
+
+            .vertical-timeline-element-title-wrapper {
+
+                // flex-direction:column;
+
+                align-items: start;
+
+                gap: .3rem;
+                //   background-color: #fd7e14;
+                h3,
+                h4 {
+                    text-align: left;
+                }
+
+            }
+
+            .vertical-timeline-element-date {
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width:480px) {
+
+    .resume-page {
+
+        // padding: 4rem 0;
+
+        .text-zone {
+
+            .header {
+
+                font-size: 2rem;
+
+            }
+
+        }
+
+        .timeline {
+
+            .timeline_experience_header-text,
+            .timeline_education_header-text {
+
+                font-size: 20px;
+
+            }
+
+            .vertical-timeline-element-title-wrapper {
+
+                h3 {
+
+                    font-size: 15px;
+
+                }
+
+                h4 {
+
+                    font-size: 14px;
+
+                    margin-left: 0;
+
+                }
+
+            }
+
+            .vertical-timeline-element-title-wrapper-description {
+
+                font-size: 13px;
+
+            }
+
+            .vertical-timeline-element-date {
+
+                font-size: 13px;
+
+            }
+
+        }
+
+    }
+
+}

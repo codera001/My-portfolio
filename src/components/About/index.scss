@@ -1,7 +1,7 @@
 .about-page {
   width: 100%;
   min-height: 100vh;
-  padding: 3rem 3rem;
+  padding: 10rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
 
-    gap: 5rem;
+    gap: 2rem;
   }
 
   .text-zone {
@@ -23,7 +23,7 @@
     max-width: 75%;
     padding: 0 10rem;
     .header {
-      color: #0d1b3d;
+      color: #0d1b3d !important;
       font-size: clamp(2.5rem, 5vw, 4.5rem);
       font-weight: 800;
       letter-spacing: 2px;
@@ -33,12 +33,15 @@
     p {
       font-size: clamp(1.5rem, 1.2vw, 1.15rem);
       line-height: 1.9;
-      color: #444;
+      color: #555;
+      font-weight: 500;
       margin-bottom: 1.4rem;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
     }
 
     span {
-      color: #fd7e14;
+      // color: #fd7e14;
       font-weight: 700;
     }
 
@@ -47,12 +50,16 @@
       gap: 4rem;
       margin-top: 2rem;
       flex-wrap: wrap;
+    text-align: justify;
+
     }
 
     .flex-one,
     .flex-two {
       flex: 1;
       min-width: 250px;
+    text-align: justify;
+
     }
   }
 
@@ -166,7 +173,7 @@
 
   .about-page {
 
-    padding: 3rem 2rem;
+    // padding: 10rem 2rem;
 
     .about-wrap {
       gap: 3rem;
@@ -176,6 +183,16 @@
       flex: 0 0 60%;
       max-width: 60%;
       padding: 0 10rem;
+
+      p{
+    text-align: justify;
+
+      }
+
+      .flex{
+      gap: 0;
+
+      }
     }
 
     .stage-cube-cont {
@@ -196,13 +213,11 @@
 
   .about-page {
 
-    padding: 4rem 1.5rem;
+    // padding: 6rem 2rem;
 
     .about-wrap {
 
       flex-direction: column;
-
-      text-align: center;
 
       gap: 3rem;
     }
@@ -213,15 +228,18 @@
       flex: 100%;
       padding: 0 ;
       .header {
-
+         text-align: left;
         font-size: 2.4rem;
+      color: #0d1b3d;
+
 
         margin-bottom: 1.5rem;
       }
 
       p {
 
-        text-align: left;
+        text-align: justify;
+
 
         font-size: 1.4rem;
 
@@ -235,7 +253,8 @@
 
         gap: 0;
 
-        text-align: left;
+        text-align: justify;
+
       }
     }
 
@@ -269,12 +288,23 @@
       padding: 0;
       .header {
         font-size: 2rem;
+        text-align: left;
+      color: #0d1b3d;
+
+
       }
 
       p {
         font-size: 1.4rem;
         font-weight: 400;
+    text-align: justify;
+
       }
+
+      .flex{
+        gap: 0;
+  
+        }
     }
 
     .cubespinner {

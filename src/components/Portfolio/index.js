@@ -58,10 +58,10 @@ const Portfolio = () => {
 
     return (
         <>
-        <div className="portfolio-wrap">
-            <div className="container portfolio-page" id="portfolio">
+        <div className="portfolio-page" id="portfolio">
+            <div className="portfolio-wrap" >
                 <div className="text-zone">
-                    <p className="header-text">
+                    <p className="header">
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={['P', 'o', 'r', 't', 'f ', 'o', 'l', 'i', 'o']}
